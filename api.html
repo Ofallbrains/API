@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="api.css">
+    <title>Design Task</title>
+</head>
+
+<body>
+    <div class="mydogs">
+        <img src="" alt="" id="img">
+        <button id="btn">Get Dog</button>
+    </div>
+</body>
+
+<script>
+    document.getElementById('btn').addEventListener('click', getDog)
+    document.getElementById('img').addEventListener('click', getDog)
+
+    function getDog() {
+        fetch('https://random.dog/woof.json')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('img').src = data.url
+
+            })
+    }
+
+</script>
+
+</html>
