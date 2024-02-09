@@ -11,7 +11,7 @@ body {
 
 #img {
     width: 300px;
-    height: 300px;
+    height: 400px;
 }
 
 #mydogs {
@@ -19,9 +19,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 11.5%;
+    margin-top: 7%;
 }
-#btn {
-/* padding: 20px; */
 
+#btn {
+    padding: 10px;
+    margin-top: 18px;
+    width: 300px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+
+}
+@media (max-width: 600px){
+    #mydogs{
+        margin-top: 10%;
+    }
 }
