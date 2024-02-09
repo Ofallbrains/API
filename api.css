@@ -14,8 +14,14 @@ body {
     height: 300px;
 }
 
-.mydogs {
+#mydogs {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-top: 11.5%;
+}
+#btn {
+/* padding: 20px; */
 
-#btn {}
+}
